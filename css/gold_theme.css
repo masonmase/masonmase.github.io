@@ -1,0 +1,242 @@
+			body{
+			     
+			     background-image:url(http://masemason.github.io/mycorner/images/My_Corner.png);
+			     
+			}
+			h1{
+			   font-family: 'Rock Salt', cursive;
+			   font-size:30pt;
+			   margin:0px;
+			   color:linen;
+			   opacity:0.8;
+			}
+			
+			.titlebx{
+				width:100%;
+				padding:20px;
+				margin-bottom:20px;
+			}
+			
+			.grid{
+				max-width:100%;
+				display:flex;
+				margin-bottom:40px;
+			}
+			.col1, .col2, .col3{
+				background-color:linen;
+				opacity:0.9;
+				height:inherit;
+				margin:30px 30px;
+				padding:20px;
+				border-radius:50px;
+				text-align:center;
+				-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                		width:295px;
+			}
+			
+			.col1{
+				
+			}
+			.col2{ 
+				
+			}
+			.linkrow{
+				width:100%;
+				min-height:46px;
+			}
+			a{
+				font-family: 'Rock Salt', cursive;
+				/*font-family: 'Shadows Into Light', cursive;*/
+			   	color: black;
+			   	/*margin:10px;*/
+			   	white-space:nowrap;-moz-transition-property: all;  /* FF4+ */
+  				-moz-transition-duration: 0.5s;
+				  -webkit-transition-property: all;  /* Saf3.2+, Chrome */
+				  -webkit-transition-duration: 0.5s;
+				  -o-transition-property: all;  /* Opera 10.5+ */
+				  -o-transition-duration: 0.5s;
+				  -ms-transition-property: all;  /* IE10? */
+				  -ms-transition-duration: 0.5s;
+				  transition-property: all;  /* Standard */
+				  transition-duration: 0.5s;
+			} 
+			
+			.linkOver{
+				display:block;
+				text-overflow:ellipsis;
+				overflow:hidden;
+			}
+			
+			.linkOver:hover{
+	             		color:black;
+	             		font-weight:bolder;
+	             		font-size:120%;
+			}
+			
+			.expander
+			{
+			    -webkit-transition: all 200ms ease-in;
+			    -webkit-transform: scale(1); 
+			    -ms-transition: all 200ms ease-in;
+			    -ms-transform: scale(1); 
+			    -moz-transition: all 200ms ease-in;
+			    -moz-transform: scale(1);
+			    transition: all 200ms ease-in;
+			    transform: scale(1);   
+			
+			}
+			.expander:hover
+			{
+				
+			    	z-index: 2;
+			    	-webkit-transition: all 200ms ease-in;
+			    	-webkit-transform: scale(1.1);
+			    	-ms-transition: all 200ms ease-in;
+			    	-ms-transform: scale(1.1);   
+			    	-moz-transition: all 200ms ease-in;
+			    	-moz-transform: scale(1.1);
+			    	transition: all 200ms ease-in;
+			    	transform: scale(1.1);
+			} 
+			.slideLeftDelay1{
+				animation-duration: 1.5s !important;	
+				-webkit-animation-duration: 1.5s !important;
+				animation-name: slideLeft;
+				-webkit-animation-name: slideLeft;	
+				animation-timing-function: ease-in-out;	
+				-webkit-animation-timing-function: ease-in-out;		
+				visibility: visible !important;	
+			}
+			
+			.slideLeftDelay2{
+				animation-duration: 2s !important;	
+				-webkit-animation-duration: 2s !important;
+				animation-name: slideLeft;
+				-webkit-animation-name: slideLeft;	
+				animation-timing-function: ease-in-out;	
+				-webkit-animation-timing-function: ease-in-out;		
+				visibility: visible !important;	
+			}
+			.slideLeftDelay3{
+				animation-duration: 2.5s !important;	
+				-webkit-animation-duration: 2.5s !important;
+				animation-name: slideLeft;
+				-webkit-animation-name: slideLeft;	
+				animation-timing-function: ease-in-out;	
+				-webkit-animation-timing-function: ease-in-out;		
+				visibility: visible !important;	
+			}
+			#popup{
+				height:90%;
+				width:90%;
+				position:absolute;
+				z-index:4;
+				left:5%;
+				padding:20px;
+	    			display: none;
+	    			background: rgba(0,0,0,0.5);
+	    			border-radius:30px;
+	    			box-shadow:0px 0px 95px 10px rgb(0, 114, 153);
+			}
+			#frme{
+				width:100%;
+				height:100%;
+				border-radius:6px;
+			}
+			
+			.frmbg{
+				background-color: rgba(0,0,0,0.9);
+    				height: 100%;
+    			}
+    		.frmgif{
+    				background:url(http://www.openprotocol.gr/content/imgs/img-loading.gif) center center no-repeat;
+    				background-size:70px;
+			}
+			
+			.blubtn{
+	    			border-color: black;
+	    			border-radius: 6px;
+	    			font-family: 'Rock Salt', cursive;
+	    			font-weight: bolder;
+	    			color: black;
+	    			transition:all 0.5s ease-in-out;
+    			
+			}
+			.blubtn:hover{
+				background-color:linen !important;
+				
+				box-shadow: 0px 0px 50px linen;
+			}
+			#pclose{
+	    			margin-bottom: 7px;
+	    			position: absolute;
+	    			right: 30px;
+	    			font-size: 9pt;
+	    			box-shadow: 0px 0px 25px 0px rgb(0, 114, 153);
+	    			opacity:0.9;
+			}
+			#pclose:hover{
+				opacity:0.9;
+			}
+			
+			#faddbtn{
+				height:40px;
+				vertical-align:top;
+			}
+			
+			input[type=text]{
+	    			border: 1px solid #111;
+	    			border-radius:5px;
+	    			line-height:40px;
+	    			padding-left:0.7em;
+	    			font-size: 15px;
+	    			height:40px;
+	    			background: #444;
+	    			color: #fff;
+	    			font-family: 'Rock Salt', cursive;
+	    			background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#444));
+	    			opacity:0.8;
+	    			-webkit-appearance: none;
+	    			-webkit-box-shadow: 1px 1px 1px #333;
+	   			-moz-box-shadow: 1px 1px 1px #333;
+	    			box-shadow: 1px 1px 1px #333;
+	    			transition:outline-color 0.5s ease-in-out;
+			}
+			
+			input[type=text]:focus { 
+				outline-color: linen; 
+			}   
+			
+			.flex-container {
+  				padding: 0;
+  				margin: 0;
+  				list-style: none;
+  				-ms-box-orient: horizontal;
+  				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+			}
+			.wrap    { 
+			  -webkit-flex-wrap: wrap;
+			  flex-wrap: wrap;
+			}  
+			
+			#lnknmeinpt{
+				width:300px;
+			}
+	
+			
+			@media screen and (max-width: 540px) {
+				#link-form, #ggl-form{
+ 					text-align:center; 
+				}
+				#lnknmeinpt{
+					width:100%;
+					margin-right:10px;
+				}
+			}
