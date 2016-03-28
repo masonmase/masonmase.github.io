@@ -1,0 +1,104 @@
+<html><head>
+		<title>Hate Means Love</title>
+		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="http://masemason.github.io/mycorner/css/animations.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="http://masemason.github.io/mycorner/js/linksDataHandler.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://masonmase.github.io/css/gold_theme.css">
+
+		<script>
+		
+		
+		
+		
+		
+		$(document).ready(function(){
+   //csd
+  			//$('.linkOver').click (function(){
+    			//$('#popup').fadeIn(500);
+    			//show_loading;
+    			//$('#frme').load('inc/content.php' , hide_loading );
+  			//});
+			
+			$('#pclose').click (function(){
+    			$('#popup').fadeOut(500);
+    			
+  			});
+  			
+  			$('#ggl-form').keypress(function (e) {
+ 				var key = e.which;
+ 				if(key == 13)  // the enter key code
+  				{
+   					 $('input[name = ggllnkbtn]').click();
+    				 return false;  
+  				}
+			}); 
+  			
+  			$('#link-form').keypress(function (e) {
+ 				var key = e.which;
+ 				if(key == 13)  // the enter key code
+  				{
+   					 $('input[name = addlnkbtn]').click();
+    				 return false;  
+  				}
+			}); 
+  			
+  			//function show_loading(){ $('.loading').show() }
+			//function hide_loading(){ $('.loading').hide() }
+			linksHandler.init();
+			
+			var isMobile = {
+    			Android: function() {
+        			return navigator.userAgent.match(/Android/i);
+    			},
+				BlackBerry: function() {
+					return navigator.userAgent.match(/BlackBerry/i);
+				},
+				iOS: function() {
+					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+				},
+				Opera: function() {
+					return navigator.userAgent.match(/Opera Mini/i);
+				},
+				Windows: function() {
+					return navigator.userAgent.match(/IEMobile/i);
+				},
+				any: function() {
+					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+				}
+			};
+			if( isMobile.any() ){
+				/*$('a').each(function(){
+  			 		 $(this).attr('target', '_blank');
+				});*/
+				
+				$('#link-form').attr('style', 'text-align:center');
+				$('#ggl-form').attr('style', 'text-align:center');
+			};
+			
+			
+		});
+		
+		
+		</script>
+	</head>
+	<body>
+		<div class="container1">
+			<div class="titlebx ">
+				<h1>Hate Means Love</h1>
+			</div>
+		
+			<div class="grid flex-container wrap" style="">
+			
+				
+			</div>
+			
+			
+		</div>
+
+
+</body></html>
