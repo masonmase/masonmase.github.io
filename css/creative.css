@@ -184,6 +184,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    filter: grayscale(100%);
 }
 
 header .header-content {
