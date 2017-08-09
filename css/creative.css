@@ -476,3 +476,10 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.orange-black-gradient{
+     background: -webkit-linear-gradient(to top, rgba(170,70,70,0.3), rgba(10,10,10,0.7), rgba(170,70,70,0.3));
+    background: linear-gradient(to top, rgba(170,70,70,0.3), rgba(10,10,10,0.7), rgba(170,70,70,0.3));
+    background: linear-gradient(to top, rgba(170,70,70,0.3), rgba(10,10,10,0.7), rgba(170,70,70,0.3));
+    background: linear-gradient(to top, rgba(170,70,70,0.3), rgba(10,10,10,0.7), rgba(170,70,70,0.3));   
+}
